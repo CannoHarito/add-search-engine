@@ -1,13 +1,11 @@
 import { Hono } from "@hono/hono";
 import { html, raw } from "@hono/hono/html";
 import { getParams, openSearchDescription } from "./openSearchDescription.ts";
-import { JSX } from "@hono/hono/jsx/jsx-runtime";
+import type { Child } from "@hono/hono/jsx";
 
 interface SiteData {
-  // deno-lint-ignore no-explicit-any
-  head?: any;
-  // deno-lint-ignore no-explicit-any
-  children?: any;
+  head?: Child;
+  children?: Child;
 }
 const Layout = (props: SiteData) =>
   html`<!doctype html>
@@ -35,7 +33,7 @@ app.get("/opensearch.xml", (c) => {
 
 app.get("/", (c) => {
   const params = getParams(c.req.query());
-  let head: string | JSX.Element = "";
+  let head: Child = "";
   if (params.ok) {
     const osdxURL = "/opensearch.xml" + new URL(c.req.url).search;
     head = (
@@ -53,7 +51,9 @@ app.get("/", (c) => {
 
   return c.html(
     <Layout head={head}>
+      {/* TODO 設定されたosdxを確認のため表示する */}
       <form method="get">
+        {/* TODO フォーム入力内容を再描画する */}
         <label>
           Search URL
           <input
