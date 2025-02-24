@@ -62,11 +62,23 @@ app.get("/", (c) => {
             placeholder="https://example.org/search?q=%s"
             required
           />
-          <p>検索キーワードに %s を入れて検索したURLを貼り付ける</p>
+        </label>
+        <p>検索キーワードに %s を入れて検索したURLを貼り付ける</p>
+        <label>
+          Name (Optional)
+          <input type="text" name="name" placeholder="Example検索" />
         </label>
         <label>
-          Name
-          <input type="text" name="name" placeholder="Example検索" />
+          <input type="checkbox" name="googlesuggest" />
+          Google Suggestionsを使用する
+        </label>
+        <label>
+          Suggestions URL (Optional)
+          <input
+            type="text"
+            name="suggest"
+            placeholder="https://example.org/suggestions?q=%s"
+          />
         </label>
         <button type="submit">追加用ページ生成</button>
       </form>
