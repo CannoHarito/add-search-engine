@@ -9,8 +9,11 @@ const sectionClass = css`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
   > * {
     margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%;
   }
   li::marker{
     font-family: "BIZ UDGothic", monospace;

@@ -44,8 +44,8 @@ app.get("/", (c) => {
         (
           <Instruction {...params}>
             <article style="border: 1px solid;padding: 0 1rem;">
-              <h4>設置されているOpenSearch Description</h4>
-              <pre>
+              <h4>設置中のOpenSearch Description</h4>
+              <pre style="overflow-x: auto;">
                 {openSearchDescription(params)}
               </pre>
             </article>
