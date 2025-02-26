@@ -2,6 +2,7 @@ import { Hono } from "@hono/hono";
 import { raw } from "@hono/hono/html";
 import { getParams, openSearchDescription } from "./openSearchDescription.ts";
 import Layout from "./layout.tsx";
+import Instruction from "./instruction.tsx";
 import Form from "./form.tsx";
 import type { Child } from "@hono/hono/jsx";
 
@@ -39,13 +40,23 @@ app.get("/", (c) => {
 
   return c.html(
     <Layout head={head}>
+      {params.ok &&
+        (
+          <Instruction {...params}>
+            <article style="border: 1px solid;padding: 0 1rem;">
+              <h4>設置されているOpenSearch Description</h4>
+              <pre>
+                {openSearchDescription(params)}
+              </pre>
+            </article>
+          </Instruction>
+        )}
       <h1>
         Add Search Engine <image src={favicon} style="height: 1em;" />
       </h1>
       <h5>
         Desktop用Firefoxに検索エンジンを追加するのを、お手伝いするWebページ。
       </h5>
-      {/* TODO 設定されたosdxを確認のため表示する */}
       <Form {...(c.req.query())} />
     </Layout>,
   );
