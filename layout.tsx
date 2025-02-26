@@ -32,9 +32,7 @@ const Layout = (props: SiteData) =>
 <title>Add Search Engine</title>
 <meta name="description" content="Desktop用Firefoxに検索エンジンを追加するのを、お手伝いします" />
 <meta property="og:image" content="https://i.gyazo.com/eb63fdc310a90abf24031768cdfa7718.png" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
 ${<Style>{globalClass}</Style>}
 ${props.head}
 
