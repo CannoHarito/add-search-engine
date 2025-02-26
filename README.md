@@ -14,11 +14,10 @@ https://add-search-engine.deno.dev
 ![スクリーンショット2](https://i.gyazo.com/153704cbf3a6fb63d5319e877a8b8f41.png)
 
 ## 参考にしたもの
-- Firefoxアドオン「Add custom search engine」
-  作成者: Tom Schuster
+
+- Firefoxアドオン「Add custom search engine」 作成者: Tom Schuster
   https://addons.mozilla.org/ja/firefox/addon/add-custom-search-engine/
-- Firefoxアドオン「Search Engines Helper」
-  作成者: Soufiane Sakhi
+- Firefoxアドオン「Search Engines Helper」 作成者: Soufiane Sakhi
   https://addons.mozilla.org/ja/firefox/addon/search-engines-helper/
 - OpenSearch 記述形式 - XML: Extensible Markup Language | MDN
   https://developer.mozilla.org/ja/docs/Web/XML/Guides/OpenSearch

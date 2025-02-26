@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 1200 630" version="1.1" viewBox="0 0 1200 630" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{opacity:0.3;fill:#DDDDDD;enable-background:new    ;}
+	.st1{opacity:0.3;fill:#666666;enable-background:new    ;}
+	.st2{fill:#666666;}
+</style>
+
+
+<rect width="1200" height="630" ry="0" fill="#efedea"/><g transform="matrix(8.3756 0 0 8.3756 449.28 68.754)"><path d="m27.388 24.642-2.828 2.828-4.95-4.95 2.828-2.828z" fill="#9aaab4"/><path d="m34.683 29.11-5.879-5.879a2 2 0 0 0-2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l5.879 5.879a4 4 0 1 0 5.656-5.656z" fill="#66757f"/><circle cx="13.586" cy="13.669" r="13.5" fill="#8899a6"/><circle cx="13.586" cy="13.669" r="9.5" fill="#bbddf5"/></g><rect x="290" y="490.5" width="620" height="100" ry="48.301" fill="#0d6efd"/><text x="311.20813" y="556.59375" fill="#ffffff" font-family="'BIZ UDPGothic'" font-size="42.667px" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.281" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan x="311.20813" y="556.59375">Firefoxに検索エンジンを追加</tspan></text><text x="288.97769" y="451.86737" fill="#000000" font-family="'BIZ UDPGothic'" font-size="58.667px" font-weight="bold" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2.1" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal" xml:space="preserve"><tspan x="288.97769" y="451.86737">Add Search Engine</tspan></text></svg>
